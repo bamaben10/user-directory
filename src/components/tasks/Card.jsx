@@ -7,7 +7,7 @@ const Card = (props) => {
     return (
         <div className="item-card">
             <div className="item-card-left">
-                <h1 className="Number">{data[props.input].id}/{data.length}</h1>
+                <h1 className="Number">{[props.input + 1]}/{data.length}</h1> 
                 <h1 className="Name">{data[props.input].name.first}</h1>
                 <p>
                   <span className="bold">From:</span> {data[props.input].city}
